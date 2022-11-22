@@ -1,0 +1,87 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: #ebebeb;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.header-container{
+    background-color: rgb(57, 58, 58);
+    min-height: 100px;
+    position: fixed;
+    width: 100%;
+    opacity: .97;
+}
+.container{
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 140px;
+}
+header{
+    max-width: 1024px;
+    min-height: 100px;
+    margin:0px auto;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mybutton{
+    padding: 10px 25px;
+    border: 1px solid;
+    margin-left: 20px;
+    display: inline-block;
+    text-align: center;
+    width: 80px;
+}
+span{
+    font-weight: bold;
+}
+.col{
+    width: 30%;
+    margin-bottom: 40px;
+    background-color: rgb(13, 106, 186);
+}
+
+.col p{
+    color: white;
+    font-size: .87rem;
+    padding: 20px;
+    line-height: 1.1rem;
+}
+
+.hide-desktop-only{
+    display: none;
+}
+.col img{
+    width: 100%;
+    height: auto;
+}
+.col p::first-line{
+    font-weight: 700;
+}
+/* Tablet view */
+@media screen and (max-width:768px){
+    .col{
+        width: 45%;
+    }    
+    .hide-desktop-only{
+        display: block;
+    }
+}
+
+/* Smartphone view */
+@media screen and (max-width:400px){
+    .col{
+        width: 100%;
+    }   
+    .hide-mobile{
+        display: none;
+    }
+}
