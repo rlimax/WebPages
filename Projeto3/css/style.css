@@ -36,9 +36,9 @@ header{
     padding: 10px 25px;
     border: 1px solid;
     margin-left: 20px;
-    display: inline-block;
     text-align: center;
-    width: 80px;
+    min-width: 80px;
+    display: inline-block;
 }
 span{
     font-weight: bold;
@@ -48,14 +48,12 @@ span{
     margin-bottom: 40px;
     background-color: rgb(13, 106, 186);
 }
-
 .col p{
     color: white;
     font-size: .87rem;
     padding: 20px;
     line-height: 1.1rem;
 }
-
 .hide-desktop-only{
     display: none;
 }
@@ -66,13 +64,51 @@ span{
 .col p::first-line{
     font-weight: 700;
 }
+.mob-wrapper{
+    width: 30px;
+    display: none;
+}
 /* Tablet view */
 @media screen and (max-width:768px){
     .col{
         width: 45%;
     }    
-    .hide-desktop-only{
+    .hide-desktop-only, nav a, .mybutton{
         display: block;
+    }
+    .header-container{
+        position: relative;
+    }
+    .container{
+        padding-top: 40px;
+    }
+    nav{
+        display: none;
+    }
+    .logo{
+        padding: 40px;
+    }
+    .mybutton{
+        margin-left: 0px;
+    }
+    .mob-wrapper{
+        display: inline-block;
+        padding-right: 30px;
+    }
+    .mob-nav{
+        display: none;
+        position: absolute;
+        padding: 15px 0px;
+    }
+    .navbutton{
+        display: block;
+        background-color: rgb(13, 106, 186);
+        padding: 15px 30px;
+        margin-left: -75px;
+        text-align: center;
+    }
+    .navbutton:hover{
+        background-color: rgb(12, 80, 140);
     }
 }
 
