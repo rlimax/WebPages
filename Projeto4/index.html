@@ -16,48 +16,45 @@
 
     <div class="container">
       <!-- Navegação -->
-      <nav class="navbar navbar-expand-lg bg-light">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">Sorvete</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Página principal</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Sobre</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Catálogo
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Produtos</a></li>
-                    <li><a class="dropdown-item" href="#">Peças</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Serviços</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled">Disabled</a>
-                </li>
-              </ul>
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
-            </div>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./image/iogo.png" alt="logo sorveteria">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle btn btn-outline-light text-white me-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Sabores
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Morango</a></li>
+                  <li><a class="dropdown-item" href="#">Chocolate</a></li>
+                  <li><a class="dropdown-item" href="#">Abacaxi</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn btn-outline-light text-white" href="#">Contato</a>
+              </li>
+            </ul>
           </div>
-        </nav>
+        </div>
+      </nav>
       <!-- Jumbotrom -->
       <div class="jumbotron container-fluid text-start p-5">
-        <h1 class="display-4 fw-bold text-white text-shadow">IOGO Delícia</h1>
-        <p class="col-md-8 fs-4 w-100 lead">O melhor sorvete da praça.</p>
-        
-        <button class="btn btn-outline-light btn-lg px-4 py-2" type="button">Example button</button>
+        <div class="row">
+          <div class="col-12 col-md-7 text-md-start text-center">
+            <h1 class="display-4 fw-bold text-white text-shadow">Ice Delícia</h1>
+            <p class="col-md-8 fs-4 w-100 lead">O melhor sorvete de Brasília.</p>
+            <button class="btn btn-outline-light btn-lg px-4 py-2 mb-5" type="button">Eu quero!</button>
+          </div>
+          <div class="col-12 col-md-5">        
+            <img src="./image/hero1.png" alt="Sorvete" class="img-fluid">
+          </div>
+        </div>
       </div>        
       <!-- Carrossel -->
       <div class="d-flex justify-content-center m-5">
